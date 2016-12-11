@@ -15,7 +15,8 @@ RUN docker-php-ext-install \
     pdo \
     pdo_mysql \
     mysqli \
-    imap
+    imap \
+    zip
 
 WORKDIR /var/www
 COPY php.ini /usr/local/etc/php/
