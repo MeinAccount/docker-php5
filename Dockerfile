@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl-dev \
     libc-client2007e-dev \
     libkrb5-dev \
+    pdftk \
  && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr
 RUN docker-php-ext-configure imap --with-imap-ssl --with-kerberos
